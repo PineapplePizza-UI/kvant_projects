@@ -59,7 +59,7 @@ ROOT_URLCONF = 'kvant_projects.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'kvant_projects/apps/kvant_proj/templates')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
