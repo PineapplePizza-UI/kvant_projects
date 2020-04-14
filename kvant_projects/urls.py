@@ -16,6 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+
+def url(param, param1):
+    pass
+
+
+def include(param):
+    pass
+
+
 urlpatterns = [
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     path('admin/', admin.site.urls),
