@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<a href="http://127.0.0.1:8000">Главная</a>
-</body>
-</html>
+{% extends 'index.html' %}
+{% block content %}
+    {% for kvant in kvant_list %}
+        <div style="background: bisque; padding: 10px">
+        <p>{{ kvant.kvantum }} </p>
+        {{ kvant.kvantum_logo }}
+        <p>{{ kvant.description }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
