@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'kvant_projects.apps.kvant_proj',
-    'ckedior',
-    'ckeditor_uploader'
+    # 'ckedior',
+    # 'ckeditor_uploader'
 ]
 
 MIDDLEWARE = [

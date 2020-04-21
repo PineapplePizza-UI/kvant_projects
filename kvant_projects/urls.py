@@ -27,7 +27,7 @@ def include(param):
 
 
 urlpatterns = [
-    re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
+    # re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
     path('admin/', admin.site.urls),
 
     path('', index, name='index')
