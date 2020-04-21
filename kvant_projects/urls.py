@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path
-from kvant_projects.apps.kvant_proj.views import index
+from kvant_projects.apps.kvant_proj.views import index, kvantums
 
 
 def url(param, param1):
@@ -30,7 +30,9 @@ urlpatterns = [
     # re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
     path('admin/', admin.site.urls),
 
-    path('', index, name='index')
+    path('', index, name='index'),
+    path('kvantums', kvantums, name='kvantums')
+
 
 
 

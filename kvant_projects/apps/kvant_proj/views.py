@@ -11,3 +11,10 @@ def index(request):
         "kv_list": kvantorianec_list
     }
     return render(request, 'index.html', context)
+
+def kvantums(request):
+    Kvantum_list = Kvantum.objects.all()
+    context = {
+        "kvant_list": Kvantum_list
+    }
+    return render(request, 'kvantum_list.html', context)
