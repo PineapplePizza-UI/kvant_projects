@@ -18,3 +18,12 @@ def kvantums(request):
         "kvant_list": Kvantum_list
     }
     return render(request, 'kvantum_list.html', context)
+
+
+def kvantum(request, kvantum_id):
+    kvant = Kvantum.objects.get(id=kvantum_id)
+    context = {
+        "kvant": kvant
+    }
+    return render(request, 'kvantum.html', context)
+

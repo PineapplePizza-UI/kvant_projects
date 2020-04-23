@@ -13,6 +13,7 @@ class Key_words(models.Model):
         verbose_name = 'Ключевое слово'
         verbose_name_plural = 'Ключевые слова'
 
+
 class Kvantum(models.Model):
     kvantum = models.CharField(max_length=50, verbose_name='квантум')
     description = models.CharField(max_length=10000, verbose_name='описание квантума')
@@ -25,8 +26,9 @@ class Kvantum(models.Model):
         verbose_name = 'Квантум'
         verbose_name_plural = 'Квантумы'
 
+
 class Master(models.Model):
-    fio = models.CharField(max_length=50, verbose_name='ФИО преподователя')
+    fio = models.CharField(max_length=75, verbose_name='ФИО преподователя')
     kvantum = models.ForeignKey(Kvantum, on_delete=models.PROTECT)
     b_date = models.DateField(verbose_name='дата рождения преподователя', blank=True)
 
@@ -37,8 +39,9 @@ class Master(models.Model):
         verbose_name = 'Наставник'
         verbose_name_plural = 'Наставники'
 
+
 class Kvantorianec(models.Model):
-    fio = models.CharField(max_length=50, verbose_name='ФИО')
+    fio = models.CharField(max_length=75, verbose_name='ФИО')
     b_date = models.DateField(verbose_name='дата рождения', blank=True)
     kvantum = models.ForeignKey(Kvantum, on_delete=models.PROTECT)
     master = models.ForeignKey(Master, on_delete=models.PROTECT)
@@ -50,12 +53,14 @@ class Kvantorianec(models.Model):
         verbose_name = 'Кванторианец'
         verbose_name_plural = 'Кванторианцы'
 
+
 class kvant_projects(models.Model):
-    project_name = models.CharField(max_length=50, verbose_name='название проекта')
+    project_name = models.CharField(max_length=100, verbose_name='название проекта')
     Kvantum = models.ManyToManyField(Kvantum)
     Key_words = models.ManyToManyField(Key_words)
     kvantorianec = models.ManyToManyField(Kvantorianec)
-    description = models.CharField(max_length=500, verbose_name='описание проекта')
+    description = models.CharField(max_length=10000, verbose_name='описание проекта')
+    low_description = models.CharField(max_length=5000, verbose_name='краткое описание проекта')
     master = models.ForeignKey(Master, on_delete=models.PROTECT)
     img = models.ImageField(upload_to="img", verbose_name='фотографии проекта', blank=True)
 
