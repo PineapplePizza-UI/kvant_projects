@@ -2,9 +2,9 @@
 {% block content %}
     {% for kvant in kvant_list %}
         <div style="background: bisque; padding: 10px">
-        <p>{{ kvant.kvantum }} </p>
+            <a href="{% url 'kvantum' kvant.id %}"><p>{{ kvant.kvantum }} </p></a>
         {{ kvant.kvantum_logo }}
-        <p>{{ kvant.description }}</p>
+            <img src="../{{ kvant.kvantum_logo }}">
         </div>
     {% endfor %}
 {% endblock %}

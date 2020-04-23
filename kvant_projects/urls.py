@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path
+from django.conf.urls.static import static
+from django.conf import settings
 from kvant_projects.apps.kvant_proj.views import index, kvantums, kvantum
 
 
@@ -26,4 +28,4 @@ urlpatterns = [
     path('kvantums', kvantums, name='kvantums'),
     re_path(r'^kvantum/(?P<kvantum_id>\d+)$', kvantum, name='kvantum'),
 
-]
+] + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)
