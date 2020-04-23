@@ -15,7 +15,7 @@ class Key_words(models.Model):
 
 class Kvantum(models.Model):
     kvantum = models.CharField(max_length=50, verbose_name='квантум')
-    description = models.CharField(max_length=250, verbose_name='описание квантума')
+    description = models.CharField(max_length=1000, verbose_name='описание квантума')
     kvantum_logo = models.ImageField(upload_to="img", verbose_name='логотип квантума', blank=True)
 
     def __str__(self):
