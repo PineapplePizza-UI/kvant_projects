@@ -15,15 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path
-from kvant_projects.apps.kvant_proj.views import index, kvantums
-
-
-def url(param, param1):
-    pass
-
-
-def include(param):
-    pass
+from kvant_projects.apps.kvant_proj.views import index, kvantums, kvantum
 
 
 urlpatterns = [
@@ -31,11 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', index, name='index'),
-    path('kvantums', kvantums, name='kvantums')
-
-
-
-
-
+    path('kvantums', kvantums, name='kvantums'),
+    re_path(r'^kvantum/(?P<kvantum_id>\d+)$', kvantum, name='kvantum'),
 
 ]
