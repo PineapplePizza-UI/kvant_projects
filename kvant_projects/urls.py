@@ -27,5 +27,4 @@ urlpatterns = [
     path('', index, name='index'),
     path('kvantums', kvantums, name='kvantums'),
     re_path(r'^kvantum/(?P<kvantum_id>\d+)$', kvantum, name='kvantum'),
-
 ] + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)

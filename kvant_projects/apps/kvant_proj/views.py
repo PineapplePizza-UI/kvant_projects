@@ -27,3 +27,17 @@ def kvantum(request, kvantum_id):
     }
     return render(request, 'kvantum.html', context)
 
+
+def project_list(request):
+    project_list = kvant_projects.objects.all()
+    context = {
+        "proj_list": project_list
+    }
+    return render(request, 'index.html', context)
+
+def kvant_project(request, project_id):
+    project = kvant_projects.objects.get(id=project_id)
+    context = {
+        "project": project
+    }
+    return render(request, 'project.html', context)
