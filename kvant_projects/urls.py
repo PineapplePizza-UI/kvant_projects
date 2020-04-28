@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include, re_path
 from django.conf.urls.static import static
 from django.conf import settings
-from kvant_projects.apps.kvant_proj.views import index, kvantums, kvantum
+from kvant_projects.apps.kvant_proj.views import index, kvantums, kvantum, kvant_project
 
 
 urlpatterns = [
@@ -27,5 +27,8 @@ urlpatterns = [
     path('', index, name='index'),
     path('kvantums', kvantums, name='kvantums'),
     re_path(r'^kvantum/(?P<kvantum_id>\d+)$', kvantum, name='kvantum'),
-
+    re_path(r'^project/(?P<project_id>\d+)$', kvant_project, name='project'),
 ] + static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)
+
+
+

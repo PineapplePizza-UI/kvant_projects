@@ -47,14 +47,14 @@ class Kvantorianec(models.Model):
     master = models.ForeignKey(Master, on_delete=models.PROTECT)
 
     def __str__(self):
-        return f"{self.kvantum}, {self.fio}, {self.master} ({self.id})"
+        return f"{self.kvantum.kvantum}, {self.fio}, {self.master.fio} ({self.id})"
 
     class Meta:
         verbose_name = 'Кванторианец'
         verbose_name_plural = 'Кванторианцы'
 
 
-class kvant_projects(models.Model):
+class Kvant_projects(models.Model):
     project_name = models.CharField(max_length=100, verbose_name='название проекта')
     Kvantum = models.ManyToManyField(Kvantum)
     Key_words = models.ManyToManyField(Key_words)
