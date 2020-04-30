@@ -14,8 +14,8 @@
                    <h1>Это наш сайт</h1>
                     <a href="kvantums">Это инфа про квантумы</a>
                      {% for project in proj_list  %}
-{#                         <a href="{% url 'project' project.id %}"><p>{{ project.project }}</p></a>#}
-                         {{ project.project_name }}
+                         <a href="{% url 'project' project.id %}"><p>{{ project.project_name }}</p></a>
+                         {{ project.low_description }}
                      {% endfor %}
               {% endblock %}
           </div>
