@@ -56,8 +56,8 @@ class Kvantorianec(models.Model):
 
 class Kvant_projects(models.Model):
     project_name = models.CharField(max_length=100, verbose_name='название проекта')
-    Kvantum = models.ManyToManyField(Kvantum)
-    Key_words = models.ManyToManyField(Key_words)
+    kvantum = models.ManyToManyField(Kvantum)
+    key_words = models.ManyToManyField(Key_words)
     kvantorianec = models.ManyToManyField(Kvantorianec)
     description = models.CharField(max_length=10000, verbose_name='описание проекта')
     low_description = models.CharField(max_length=5000, verbose_name='краткое описание проекта')
