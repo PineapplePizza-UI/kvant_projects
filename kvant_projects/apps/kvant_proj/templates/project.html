@@ -1,18 +1,22 @@
 {% extends 'index.html' %}
 {% block content %}
 <p>{{ project.project_name }}</p>
-    <p>{{ project.Kvantum }}</p>
+    <p>
+        {% for kvantum in kvantums %}
+            <span style="border: 1px solid red">{{ kvantum.kvantum }}</span>
+        {% endfor %}
+
+    </p>
     <h3>Состав команды:</h3>
     <ol>
         {% for kv in kvantirianec %}
             <li class="kv-in-list"
-                style="display: inline-block; padding: 5px; box-shadow: 2px 2px 20px 3px #d6b0b0;border-radius: 2px;">
+                style="display: inline-block; padding: 5px; box-shadow: 2px 2px 20px 3px #d6b0b0;border-radius: 4px;">
                 {{ kv.fio }}
             </li>
         {% endfor %}
-
     </ol>
-    <p>{{ project.master }}</p>
+    <p>{{ project.master.fio }}</p>
     <p>{{ project.description }}</p>
     <p>{{ project.img }}</p>
 {% endblock %}
