@@ -15,8 +15,6 @@
               {% block content %}
                   <h1>Это наш сайт</h1>
                   <p><img src="static/img/био.png"> Картинка</p>
-                  <p><img src="static/img/IT.png"> Картинка ИТ</p>
-
                   <a href="kvantums">Это инфа про квантумы</a>
                   {% for project in proj_list  %}
                      <a href="{% url 'project' project.id %}"><p>{{ project.project_name }}</p></a>
