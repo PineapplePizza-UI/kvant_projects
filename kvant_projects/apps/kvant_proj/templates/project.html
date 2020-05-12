@@ -19,4 +19,7 @@
     <p>{{ project.master.fio }}</p>
     <p>{{ project.description }}</p>
     <p>{{ project.img }}</p>
+    <img src="/static/{{ project.img }}">
+{#    <img src="{% url 'static' project.img %}">#}
+
 {% endblock %}
