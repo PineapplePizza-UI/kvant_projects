@@ -35,6 +35,6 @@ def kvant_project(request, project_id):
     context = {
         "project": project,
         "kvantirianec": project.kvantorianec.all(),
-        "kvantums": project.Kvantum.all(),
+        "kvantums": project.kvantum.all(),
     }
     return render(request, 'project.html', context)
