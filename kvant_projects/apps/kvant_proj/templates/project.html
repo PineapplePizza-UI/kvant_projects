@@ -1,5 +1,6 @@
 {% extends 'index.html' %}
 {% block content %}
+    <a href={% url "index" %}>Главная</a>
 <p>{{ project.project_name }}</p>
     <p>
         {% for kvantum in kvantums %}

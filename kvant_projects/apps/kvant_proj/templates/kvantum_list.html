@@ -1,5 +1,6 @@
 {% extends 'index.html' %}
 {% block content %}
+      <a href={% url "index" %}>Главная</a>
     {% for kvant in kvant_list %}
         <div style="background: bisque; padding: 10px">
             <p>{{kvant.kvantum_logo}}</p>

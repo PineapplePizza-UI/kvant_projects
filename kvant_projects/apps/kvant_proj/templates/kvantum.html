@@ -1,5 +1,8 @@
 {% extends 'index.html' %}
 {% block content %}
+    <a href={% url "index" %}>Главная</a>
+    <br>
+    <a href={% url "kvantums" %}>Квантумы</a>
     <div style="background: bisque; padding: 10px">
         <p>{{ kvant.kvantum }} </p>
         {{ kvant.kvantum_logo }}
