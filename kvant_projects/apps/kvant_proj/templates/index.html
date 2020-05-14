@@ -4,26 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'u.css' %}">
 </head>
 <body>
+
   <div class="wrapper">
       <div class="header"></div>
       <div class="base">
-          <div class="left-menu"></div>
-          <div class="content">
+
               {% block content %}
-                  <h1>Это наш сайт</h1>
-                  <p><img src="static/img/био.png"> Картинка</p>
-                  <a href="kvantums">Это инфа про квантумы</a>
+
+                  <a id ="inf" href="kvantums">Это инфа про квантумы</a>
+<div id="proj">
                   {% for project in proj_list  %}
-                     <a href="{% url 'project' project.id %}"><p>{{ project.project_name }}</p></a>
-                     {{ project.low_description }}
+                      <a class="list" href="{% url 'project' project.id %}">
+                      <div class="div_inside">
+                          <div class="div_name">{{ project.project_name }}</div><br>
+                          <!--здесь будет картинка-->
+                      </div>
+                      </a>
                   {% endfor %}
               {% endblock %}
           </div>
       </div>
-      <div class="futter"></div>
-  </div>
+      </div>
 </body>
 </html>

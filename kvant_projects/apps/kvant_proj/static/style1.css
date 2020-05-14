@@ -19,7 +19,7 @@ a {
         }
 
         body {
-
+            background-color: red;
             margin-top: 20px;
         }
 
@@ -28,26 +28,25 @@ a {
         }
         #inf{
             width: 20%;
-            color: red;
-            border: 1px solid green;
+            color: blue;
+            border: 1px solid blue;
             font-size: 20px;
             float: left;
             height: 100px;
-            margin-top: 40px;
 
         }
      .list{
-
+           
             font-size: 20px;
          margin-left:10px;
          padding:10px;
 
    }
      #proj{
-         width: 500px;
+         width:70%;
            border: 1px solid red;
          float: left;
-         margin-left: 40px;
+         margin-left: 20px;
      }
      a{
          text-decoration: none;
@@ -59,7 +58,4 @@ a {
          padding:10px 20px 10px 20px;
          float: left;
          border: 1px solid firebrick;
-     }
-     p{
-         color: red;
      }
