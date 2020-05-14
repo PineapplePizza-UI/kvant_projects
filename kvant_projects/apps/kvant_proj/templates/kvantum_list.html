@@ -1,9 +1,12 @@
 {% extends 'index.html' %}
 {% block content %}
+      <a href={% url "index" %}>Главная</a>
     {% for kvant in kvant_list %}
-        <div style="background: bisque; padding: 10px">
-            <a href="{% url 'kvantum' kvant.id %}"><p>{{ kvant.kvantum }} </p></a>
+        <a href="{% url 'kvantum' kvant.id %}">
+        <div class="kvan_list">
+           <p class="links_in_kvantlist" >{{ kvant.kvantum }}  </p>
             <img src="static/{{kvant.kvantum_logo}}">
         </div>
+        </a>
     {% endfor %}
 {% endblock %}
