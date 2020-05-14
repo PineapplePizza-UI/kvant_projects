@@ -3,7 +3,7 @@
       <a href={% url "index" %}>Главная</a>
     {% for kvant in kvant_list %}
         <a href="{% url 'kvantum' kvant.id %}">
-        <div class="kvan_list">
+        <div class="kvant-list">
            <p class="links_in_kvantlist" >{{ kvant.kvantum }}  </p>
             <img src="static/{{kvant.kvantum_logo}}">
         </div>
