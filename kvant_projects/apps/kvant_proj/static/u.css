@@ -1,6 +1,4 @@
-a {
-            font-style: italic;
-        }
+
         blockquote {
             margin: 20px 0;
             padding-left: 20px;
@@ -19,7 +17,7 @@ a {
         }
 
         body {
-
+            background-color: #F0FFF0;
             margin-top: 20px;
         }
 
@@ -27,13 +25,17 @@ a {
             color: black;
         }
         #inf{
+            text-align: center;
             width: 20%;
-            color: red;
-            border: 1px solid green;
+            color: blue;
+            border: 1px solid blue;
             font-size: 20px;
             float: left;
             height: 100px;
-            margin-top: 40px;
+            margin: 20px;
+            padding: 15px;
+            position: fixed;
+            left: 20px;
 
         }
      .list{
@@ -44,22 +46,35 @@ a {
 
    }
      #proj{
-         width: 500px;
-           border: 1px solid red;
+
+         width: 70%;
+           border: 1px solid blue;
          float: left;
-         margin-left: 40px;
+         margin: 20px 20px 20px 450px;
      }
      a{
          text-decoration: none;
      }
      .div_inside{
 
-         width:40%;
+         width:42%;
          margin: 10px 20px 10px 20px;
          padding:10px 20px 10px 20px;
          float: left;
-         border: 1px solid firebrick;
+         border: 1px solid blue;
+         height: 200px;
      }
-     p{
-         color: red;
-     }
+ .kvan_list{
+     margin: 10px 20px 20px 20px;
+     width:25%;
+     height: 300px;
+     float:left;
+     padding: 10px 30px 10px 30px;
+     border: 1px solid blue;
+ }
+ .links_in_kvantlist{
+     text-align: center;
+ }
+ .div_name{
+ text-align: center;
+ }
