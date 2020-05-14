@@ -72,10 +72,16 @@ a{
     float:left;
     padding: 10px 30px 10px 30px;
     border: 1px solid blue;
+    text-align: center;
+}
+
+.kvant-list p {
+    font-size: 16pt;
 }
 
 .kvant-list img {
-    width: 300pt;
+    /*width: 300pt;*/
+    height: 160pt;
 }
 
 .links_in_kvantlist {
