@@ -1,61 +1,134 @@
-a {
-            font-style: italic;
-        }
-        blockquote {
-            margin: 20px 0;
-            padding-left: 20px;
-            border-left: 5px solid #ee6e73;
-            font-style: italic;
-            line-height: 26px;
-            font-weight: 400;
-            font-size: 18px;
-        }
-        h1 {
-            border: 1px solid red;
-            padding: 5px;
-            font-family: Lobster, Ubuntu, Helvetica, Verdana, sans-serif;
-            /*font-weight: 150px;*/
-            font-weight: lighter;
-        }
 
         body {
-            background-color: red;
+            background-color: #F0FFF0;
             margin-top: 20px;
         }
 
-        h1 {
-            color: black;
-        }
+
         #inf{
+            text-align: center;
             width: 20%;
             color: blue;
             border: 1px solid blue;
             font-size: 20px;
             float: left;
             height: 100px;
+            margin: 20px;
+            padding: 15px;
+            position: fixed;
+            left: 20px;
 
         }
      .list{
-           
+
             font-size: 20px;
          margin-left:10px;
          padding:10px;
 
    }
      #proj{
-         width:70%;
-           border: 1px solid red;
+
+         width: 70%;
+           border: 1px solid blue;
          float: left;
-         margin-left: 20px;
+         margin: 20px 20px 20px 450px;
      }
      a{
          text-decoration: none;
      }
      .div_inside{
 
-         width:40%;
-         margin: 10px 20px 10px 20px;
+         width:90%;
+         margin: 10px 10px 10px 10px;
          padding:10px 20px 10px 20px;
          float: left;
-         border: 1px solid firebrick;
+
+         height: 200px;
      }
+ .list{
+
+     margin: 20px 20px 20px 25px;
+     width:40%;
+     height: 300px;
+     float:left;
+     padding: 10px 30px 10px 30px;
+     border: 1px solid blue;
+ }
+ .links_in_kvantlist{
+     text-align: center;
+ }
+ .div_name{
+ text-align: center;
+ }
+ .link_to_main{
+     background-color: #ADD8E6;
+     border: 1px solid blue;
+     width:170px;
+            height: 49px;
+            top:30px;
+            position: fixed;
+     padding:5px 5px 5px 18px;
+            left: 70px;
+     color: blue;
+     font-size: 130%;
+}
+ #kvant_logo_list{
+     width: 80%;
+           border: 1px solid blue;
+         float: left;
+         margin: 10px 20px 20px 300px;
+ }
+ #pic_go_back{
+     position: fixed;
+     top:30px;
+     left:25px;
+     height:60px;
+     width:45px;
+     border: 1px solid blue;
+ }
+ #link_to_kvantlist{
+     background-color: #ADD8E6;
+     border: 1px solid blue;
+     width:170px;
+            height: 49px;
+            top:30px;
+            position: fixed;
+     padding:5px 5px 5px 18px;
+            left: 265px;
+     color: blue;
+     font-size: 130%;
+ }
+ .kvant_name{
+     top: 8px;
+     left: 800px;
+     position: fixed;
+     font-size: 200%;
+ }
+ #logo{
+     margin: 30px 10px 10px 10px;
+     float: left;
+     width: 23%;
+     height: 200px;
+ }
+ #description{
+     width: 70%;
+     margin: 30px 70px 10px 10px;
+     float:left;
+     font-size: 150%;
+ }
+ #line{
+     margin-top: 120px;
+ }
+ #logo1{
+     margin-left: 70px;
+ }
+ #proj_name{
+     top: 8px;
+     left: 500px;
+     position: fixed;
+     font-size: 200%;
+ }
+ #kvant{
+     margin: 200px 80px 20px 20px;
+     color: red;
+ }

@@ -1,12 +1,17 @@
 {% extends 'index.html' %}
 {% block content %}
-      <a href={% url "index" %}>Главная</a>
+    <a  href={% url "index" %}>
+   <img id="pic_go_back" src="kvant_projects/apps/kvant_proj/static/img/go_back.jpg"> <!-- можете укзатать нормальны адрес для картинки-->
+    </a>
+     <a class="link_to_main" href={% url "index" %}> На главную страницу</a>
+    <div id="kvant_logo_list">
     {% for kvant in kvant_list %}
         <a href="{% url 'kvantum' kvant.id %}">
-        <div class="kvant-list">
+        <div class="list">
            <p class="links_in_kvantlist" >{{ kvant.kvantum }}  </p>
-            <img src="static/{{kvant.kvantum_logo}}">
+            <img id="logo1"  src="static/{{kvant.kvantum_logo}}" width="330px" height="205px">
         </div>
         </a>
     {% endfor %}
 {% endblock %}
+</div>

@@ -1,25 +1,28 @@
 {% extends 'index.html' %}
 {% block content %}
-    <a href={% url "index" %}>Главная</a>
-<p>{{ project.project_name }}</p>
+    <a  href={% url "kvantums" %}>
+     <img id="pic_go_back" src="kvant_projects/apps/kvant_proj/static/img/go_back.jpg"> <!--  можете укзатать нормальны адрес для картинки-->
+    </a>
+    <a class="link_to_main" href={% url "index" %}>Главная</a>
+<p id="proj_name">{{ project.project_name }}</p>
     <p>
         {% for kvantum in kvantums %}
-            <span style="border: 1px solid red">{{ kvantum.kvantum }}</span>
+
+            <div id="kvant"> Квантум: {{ kvantum.kvantum }}<!--можете убрать последние слово "квантум" из базы данных--></div>
         {% endfor %}
 
     </p>
-    <h3>Состав команды:</h3>
+    <p id="master">Состав команды:</p>
     <ol>
         {% for kv in kvantirianec %}
-            <li class="kv-in-list"
-                style="display: inline-block; padding: 5px; box-shadow: 2px 2px 20px 3px #d6b0b0;border-radius: 4px;">
+            <li class="kv-in-list">
                 {{ kv.fio }}
             </li>
         {% endfor %}
     </ol>
-    <p>{{ project.master.fio }}</p>
-    <p>{{ project.description }}</p>
-    <p>{{ project.img }}</p>
+    <p id="master">Руководитель проекта: {{ project.master.fio }}</p>
+    <p id="proj_description">{{ project.description }}</p>
+
     <img src="/static/">
 {#    <img src="{% url 'static' project.img %}">#}
 

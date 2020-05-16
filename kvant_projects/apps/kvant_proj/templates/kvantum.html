@@ -1,10 +1,14 @@
 {% extends 'index.html' %}
 {% block content %}
-    <a href={% url "index" %}>Главная</a>
-    <br>
-    <a href={% url "kvantums" %}>Квантумы</a>
-    <div style="background: bisque; padding: 10px">
-        <img src="/static/{{kvant.kvantum_logo}}">
-        <p>{{ kvant.description }}</p>
-    </div>
+    <a  href={% url "kvantums" %}>
+     <img id="pic_go_back" src="kvant_projects/apps/kvant_proj/static/img/go_back.jpg"> <!--  можете укзатать нормальны адрес для картинки-->
+    </a>
+        <a class="link_to_main" href={% url "index" %}>На главную страницу</a>
+
+    <a id="link_to_kvantlist" href={% url "kvantums" %}>Вернуться к выбору квантума</a><hr id="line">
+        <p class="kvant_name">{{ kvant.kvantum }} </p>
+
+        <div id="description">{{ kvant.description }}</div>
+    <img id="logo" src="static/{{kvant.kvantum_logo}}">
+
 {% endblock %}
