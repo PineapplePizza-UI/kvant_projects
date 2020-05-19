@@ -1,4 +1,5 @@
 
+
         body {
             background-color: #F0FFF0;
             margin-top: 20px;
@@ -78,11 +79,17 @@
          float: left;
          margin: 10px 20px 20px 300px;
  }
+ .kvan_list{
+     float: left;
+     border: 1px solid blue;
+     width: 40%;
+     margin: 20px 40px 20px 30px;
+ }
  #pic_go_back{
      position: fixed;
      top:30px;
      left:25px;
-     height:60px;
+     height:59px;
      width:45px;
      border: 1px solid blue;
  }
@@ -123,12 +130,29 @@
      margin-left: 70px;
  }
  #proj_name{
+     width: 800px;
      top: 8px;
      left: 500px;
      position: fixed;
      font-size: 200%;
  }
  #kvant{
-     margin: 200px 80px 20px 20px;
-     color: red;
+   position: fixed;
+     top: 100px;
+ font-size: 150%;
  }
+ .kv-in-list{
+     font-size: 135%;
+ }
+ #master{
+     font-size: 135%;
+     margin-left: 10px;
+ }
+#proj_description{
+    font-size: 130%;
+    margin-left: 10px;
+}
+#proj_members{
+    color: red;
+    margin: 140px 10px 10px 10px;
+}

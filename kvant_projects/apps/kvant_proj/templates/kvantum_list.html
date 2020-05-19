@@ -9,7 +9,7 @@
         <a href="{% url 'kvantum' kvant.id %}">
         <div class="kvan_list">
            <p class="links_in_kvantlist" >{{ kvant.kvantum }}  </p>
-            <img  src="static/{{kvant.kvantum_logo}}" width="300px" height="200px">
+            <img id="logo_in_link" src="static/{{kvant.kvantum_logo}}" width="300px" height="200px">
         </div>
         </a>
     {% endfor %}

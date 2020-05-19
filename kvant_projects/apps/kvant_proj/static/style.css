@@ -1,28 +1,11 @@
-  blockquote {
-            margin: 20px 0;
-            padding-left: 20px;
-            border-left: 5px solid #ee6e73;
-            font-style: italic;
-            line-height: 26px;
-            font-weight: 400;
-            font-size: 18px;
-        }
-        h1 {
-            border: 1px solid red;
-            padding: 5px;
-            font-family: Lobster, Ubuntu, Helvetica, Verdana, sans-serif;
-            /*font-weight: 150px;*/
-            font-weight: lighter;
-        }
+
 
         body {
             background-color: #F0FFF0;
             margin-top: 20px;
         }
 
-        h1 {
-            color: black;
-        }
+
         #inf{
             text-align: center;
             width: 20%;
@@ -56,21 +39,21 @@
      }
      .div_inside{
 
-         width:42%;
-         margin: 10px 20px 10px 20px;
+         width:90%;
+         margin: 10px 10px 10px 10px;
          padding:10px 20px 10px 20px;
          float: left;
-         border: 1px solid blue;
+
          height: 200px;
      }
  .list{
 
-     margin: 10px 20px 20px 20px;
-     width:20%;
+     margin: 20px 20px 20px 25px;
+     width:40%;
      height: 300px;
      float:left;
      padding: 10px 30px 10px 30px;
-     border: 1px solid red;
+     border: 1px solid blue;
  }
  .links_in_kvantlist{
      text-align: center;
@@ -80,7 +63,7 @@
  }
  .link_to_main{
      background-color: #ADD8E6;
-     border: 1px solid red;
+     border: 1px solid blue;
      width:170px;
             height: 49px;
             top:30px;
@@ -96,11 +79,17 @@
          float: left;
          margin: 10px 20px 20px 300px;
  }
+ .kvan_list{
+     float: left;
+     border: 1px solid blue;
+     width: 40%;
+     margin: 20px 40px 20px 30px;
+ }
  #pic_go_back{
      position: fixed;
      top:30px;
      left:25px;
-     height:60px;
+     height:59px;
      width:45px;
      border: 1px solid blue;
  }
@@ -137,3 +126,37 @@
  #line{
      margin-top: 120px;
  }
+ #logo1{
+     margin-left: 70px;
+ }
+ #proj_name{
+     width: 800px;
+     top: 8px;
+     left: 41%;
+     position: fixed;
+     font-size: 200%;
+ }
+ #kvant{
+   position: fixed;
+     left:20px;
+     top: 120px;
+ font-size: 150%;
+ }
+ .kv-in-list{
+     font-size: 135%;
+ }
+ #master{
+     font-size: 135%;
+     margin-left: 10px;
+ }
+#proj_description{
+    font-size: 135%;
+    margin-left: 10px;
+}
+.proj_members{
+    margin: 160px 10px 10px 10px;
+}
+#members{
+    font-size:135%;
+    margin-bottom: 1px;
+}
