@@ -15,7 +15,7 @@
                       <a class="list" href="{% url 'project' project.id %}">
                       <div class="div_inside">
                           <div class="div_name">{{ project.project_name }}</div><br>
-                          <img  src="static/{{kvant.kvantum_logo}}" width="380px" height="200px">
+                          <img  src="/static/{{ project.img }}" width="380px" height="200px">
                       </div>
                       </a>
                   {% endfor %}

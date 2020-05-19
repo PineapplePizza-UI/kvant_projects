@@ -1,7 +1,7 @@
 {% extends 'index.html' %}
 {% block content %}
     <a  href={% url "index" %}>
-    <img id="pic_go_back" src="static/img/go_back.jpg">
+    <img id="pic_go_back" src="/static/img/go_back.jpg">
     </a>
     <a class="link_to_main" href={% url "index" %}>Главная</a>
 <p id="proj_name">{{ project.project_name }}</p>
