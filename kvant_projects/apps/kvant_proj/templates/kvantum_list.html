@@ -8,7 +8,7 @@
     {% for kvant in kvant_list %}
         <a href="{% url 'kvantum' kvant.id %}">
         <div class="kvan_list">
-            <img id="logo_in_link" src="static/{{kvant.kvantum_logo}}" width="300px" height="200px">
+            <img class="logo_in_link" src="static/{{kvant.kvantum_logo}}">
         </div>
         </a>
     {% endfor %}
