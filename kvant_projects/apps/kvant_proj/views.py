@@ -25,7 +25,8 @@ def kvantums(request):
 def kvantum(request, kvantum_id):
     kvant = Kvantum.objects.get(id=kvantum_id)
     context = {
-        "kvant": kvant
+        "kvant": kvant,
+        "proj_list": kvant.kvant_projects_set.all(),
     }
     return render(request, 'kvantum.html', context)
 

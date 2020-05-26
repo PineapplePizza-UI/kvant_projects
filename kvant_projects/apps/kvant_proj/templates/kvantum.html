@@ -6,9 +6,18 @@
         <a class="link_to_main" href={% url "index" %}>На главную страницу</a>
 
     <a id="link_to_kvantlist" href={% url "kvantums" %}>Вернуться к выбору квантума</a><hr id="line">
-        <p class="kvant_name">{{ kvant.kvantum }} </p>
+    <p class="kvant_name">{{ kvant.kvantum }} </p>
 
-        <div id="description">{{ kvant.description }}</div>
+    <div id="description">{{ kvant.description }}</div>
     <img id="logo" src="/static/{{kvant.kvantum_logo}}">
-
+    <h3>Проекты квантума</h3>
+    <ul>
+        {% for project in proj_list %}
+            <li>
+                <a href="{% url 'project' project.id %}">
+                    {{ project.project_name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
 {% endblock %}
