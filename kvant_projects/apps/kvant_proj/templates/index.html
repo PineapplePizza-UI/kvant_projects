@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
               {% block content %}
 
                   <a id ="inf" href="kvantums">Это информация про квантумы</a>
+                  <div id="header">Каталог проектов кванторианцев</div>
 <div id="proj">
+
                   {% for project in proj_list  %}
                       <a class="list" href="{% url 'project' project.id %}">
                       <div class="div_inside">

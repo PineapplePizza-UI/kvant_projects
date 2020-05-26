@@ -12,7 +12,7 @@ body {
     font-size: 20px;
     float: left;
     height: 100px;
-    margin: 20px;
+    margin: 47px 20px 20px 20px;
     padding: 10px 20px 30px 30px;
     position: fixed;
     left: 20px;
@@ -173,4 +173,10 @@ a{
 }
 #members{
     font-size: 130%;
+}
+#header{
+    margin-left:48%;
+    margin-top: 20px;
+    color:blue;
+    font-size: 150%;
 }
