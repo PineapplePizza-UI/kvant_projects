@@ -1,7 +1,7 @@
 body {
     background-color: #F0FFF0;
     margin-top: 20px;
-    font-family: Roboto, Source Sans Pro;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #inf {
@@ -13,7 +13,7 @@ body {
     float: left;
     height: 100px;
     margin: 20px;
-    padding: 15px;
+    padding: 10px 20px 30px 30px;
     position: fixed;
     left: 20px;
 }
@@ -26,7 +26,7 @@ body {
 
 #proj{
     width: 70%;
-    border: 1px solid blue;
+    border: 3px inset blue;
     float: left;
     margin: 20px 20px 20px 450px;
 }
@@ -36,6 +36,7 @@ a{
 }
 
 .div_inside{
+
     width:90%;
     margin: 10px 10px 10px 10px;
     padding:10px 20px 10px 20px;
@@ -45,11 +46,11 @@ a{
 
 .list{
     margin: 20px 20px 20px 25px;
-    width:40%;
+    width:37%;
     height: 300px;
     float:left;
     padding: 10px 30px 10px 30px;
-    border: 1px solid blue;
+    border: 3px outset blue;
 }
 
 .links_in_kvantlist{
@@ -62,7 +63,7 @@ a{
 
 .link_to_main{
     background-color: #ADD8E6;
-    border: 1px solid blue;
+    border: 2px solid blue;
     width:170px;
         height: 49px;
         top:30px;
@@ -75,14 +76,14 @@ a{
 
 #kvant_logo_list{
     width: 80%;
-    border: 1px inset blue;
+    border: 3px inset blue;
     float: left;
     margin: 10px 20px 20px 300px;
 }
 
 .kvan_list{
     float: left;
-    border: 1px outset blue;
+    border: 3px outset blue;
     width: 40%;
     margin: 20px 40px 20px 40px;
     text-align: center;
@@ -98,12 +99,12 @@ a{
     left:25px;
     height:59px;
     width:45px;
-    border: 1px solid blue;
+    border: 2px solid blue;
 }
 
 #link_to_kvantlist{
     background-color: #ADD8E6;
-    border: 1px solid blue;
+    border: 2px solid blue;
     width:170px;
     height: 49px;
     top:30px;
@@ -169,4 +170,7 @@ a{
 #proj_description {
     font-size: 130%;
     margin-left: 10px;
+}
+#members{
+    font-size: 130%;
 }
